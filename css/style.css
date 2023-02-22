@@ -113,6 +113,8 @@ h1, h2, h3, h4, h5, h6, figure {
   display: flex;
 }
 
+
+
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1 {
     display: none;
@@ -440,6 +442,14 @@ h1, h2, h3, h4, h5, h6, figure {
   float: right;
   width: 78%;
 }
+#whom img {
+  width: 100%;
+}
+
+.top {
+  margin-top: 50px;
+}
+
 @media screen and (max-width: 768px) {
   #whom .feature-left .feature-copy {
     width: 84%;
