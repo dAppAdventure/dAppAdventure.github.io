@@ -18,4 +18,4 @@ nvm alias default 18
 npm install npm --global # Upgrade npm to the latest version
 ```
 
-Для Windows: скачайте и запустите установщик https://nodejs.org/en/download/
+Для Windows: скачайте и запустите [установщик](https://nodejs.org/en/download/)
