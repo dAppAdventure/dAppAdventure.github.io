@@ -106,14 +106,6 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
 }
 
-.row-eq-height{
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-
 
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1 {
