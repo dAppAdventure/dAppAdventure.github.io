@@ -25,3 +25,5 @@ event Launch(
 ```shell
 npx hardhat test
 ```
+
+Код проекта находится [здесь](https://github.com/dAppAdventure/dAppAdventure.github.io/tree/main/lessons/lesson3-8/crowd-fund)
