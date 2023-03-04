@@ -17,3 +17,5 @@
 ```shell
 npx hardhat --network hardhat test
 ```
+
+Код проекта находится [здесь](https://github.com/dAppAdventure/dAppAdventure.github.io/tree/main/lessons/lesson3-7/advanced-lock)
