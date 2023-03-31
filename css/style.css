@@ -361,6 +361,12 @@ figure {
   padding-top: 100px;
 }
 
+.webinar {
+  font-weight: 900;
+  background-color: #fee856;
+}
+
+
 #header .display-tc h1,
 .fh5co-cover .display-tc h1 {
   margin-bottom: 20px;
