@@ -52,13 +52,14 @@
 	const fbPixelClientId = fbPixelCookie ? fbPixelCookie[1] : '';
 
 	const params = new URLSearchParams(window.location.search);
-	if (yandexMetrikaClientId != '') {
-		params.append("yid", yandexMetrikaClientId)
-	}
-	if (fbPixelClientId != '') {
-		params.append("fid", fbPixelClientId)
-	}
-	const encodedParams = btoa(params.toString()).replace("=","");
+	// if (yandexMetrikaClientId != '') {
+	// 	params.append("yid", yandexMetrikaClientId)
+	// }
+	// if (fbPixelClientId != '') {
+	// 	params.append("fid", fbPixelClientId)
+	// }
+	const rid = params.get('rid');
+	const encodedParams = btoa("rid=" + rid).replace("=","");
 	const links = document.querySelectorAll('a.course');
 	for (let i = 0; i < links.length; i++) {
 		const url = new URL(links[i].href);
