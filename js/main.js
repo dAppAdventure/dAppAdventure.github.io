@@ -28,7 +28,7 @@
 	if (popup != null) {
 		var closeBtn = document.getElementsByClassName("closepopup")[0];
 
-		setTimeout(function(){
+		setTimeout(function () {
 			popup.style.display = "block";
 		}, 15000);
 
@@ -42,6 +42,28 @@
 				popup.style.display = "none";
 			}
 		}
+	}
+
+	// params
+	const yandexMetrikaCookie = document.cookie.match(/_ym_uid=([^;]+)/);
+	const yandexMetrikaClientId = yandexMetrikaCookie ? yandexMetrikaCookie[1] : '';
+
+	const fbPixelCookie = document.cookie.match(/_fbp=([^;]+)/);
+	const fbPixelClientId = fbPixelCookie ? fbPixelCookie[1] : '';
+
+	const params = new URLSearchParams(window.location.search);
+	if (yandexMetrikaClientId != '') {
+		params.append("yid", yandexMetrikaClientId)
+	}
+	if (fbPixelClientId != '') {
+		params.append("fid", fbPixelClientId)
+	}
+	const encodedParams = btoa(params.toString()).replace("=","");
+	const links = document.querySelectorAll('a.course');
+	for (let i = 0; i < links.length; i++) {
+		const url = new URL(links[i].href);
+		url.searchParams.set('start', encodedParams);
+		links[i].href = url.toString();
 	}
 
 	var mobileMenuOutsideClick = function () {
