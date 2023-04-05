@@ -59,12 +59,14 @@
 	// 	params.append("fid", fbPixelClientId)
 	// }
 	const rid = params.get('rid');
-	const encodedParams = btoa("rid=" + rid).replace("=","");
-	const links = document.querySelectorAll('a.course');
-	for (let i = 0; i < links.length; i++) {
-		const url = new URL(links[i].href);
-		url.searchParams.set('start', encodedParams);
-		links[i].href = url.toString();
+	if (rid != null) {
+		const encodedParams = btoa("rid=" + rid).replace("=", "");
+		const links = document.querySelectorAll('a.course');
+		for (let i = 0; i < links.length; i++) {
+			const url = new URL(links[i].href);
+			url.searchParams.set('start', encodedParams);
+			links[i].href = url.toString();
+		}
 	}
 
 	var mobileMenuOutsideClick = function () {
