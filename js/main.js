@@ -27,10 +27,9 @@
 	var popup = document.getElementById("popup");
 	if (popup != null) {
 		var closeBtn = document.getElementsByClassName("closepopup")[0];
-// Turn off untill next activity
-// 		setTimeout(function () {
-// 			popup.style.display = "block";
-// 		}, 15000);
+ 		setTimeout(function () {
+ 			popup.style.display = "block";
+ 		}, 15000);
 
 		// When the user clicks on <span> (x), close the modal
 		closeBtn.onclick = function () {
