@@ -8,7 +8,7 @@
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 body {
@@ -52,7 +52,7 @@ body {
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
+  from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
 
@@ -467,7 +467,6 @@ figure {
 }
 
 @media screen and (max-width: 768px) {
-
   #header .display-tc h1,
   .fh5co-cover .display-tc h1 {
     font-size: 30px;
@@ -493,10 +492,8 @@ figure {
 }
 
 @media screen and (max-width: 768px) {
-
   #header .display-tc .btn,
   .fh5co-cover .display-tc .btn {
-    width: 80%;
     margin: 0 auto;
   }
 }
@@ -820,6 +817,9 @@ figure {
 #feedback .heading p {
   font-style: 22px;
 }
+#feedback h2 {
+  margin: 0;
+}
 
 #fh5co-hero {
   height: 500px !important;
@@ -901,7 +901,7 @@ figure {
 
 @media screen and (max-width: 768px) {
   #fh5co-hero .flexslider .slider-text-bg .desc p {
-    display: none;
+    font-size: 12px;
   }
 }
 
@@ -1103,6 +1103,13 @@ figure {
 @media screen and (max-width: 768px) {
   .program {
     width: 100%;
+  }
+
+  .fh5co-heading h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #000;
   }
 }
 
