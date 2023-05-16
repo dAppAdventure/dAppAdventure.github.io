@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Открытый урок: Сценарии использования протокола Сompound</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Открытый урок: Сценарии использования протокола Сompound" />
+	<meta name="keywords"
+		content="Solidity, Etherium, Web3, Blockchain, JavaScript, NFT, defi, Protocols, hardhat, ganashe, truffle, remix, infura" />
+	<meta name="author" content="dAppAdventure" />
+
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="shortcut icon" type="image/png" href="images/favicon-16x16.png">
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Открытый урок: Сценарии использования протокола Сompound" />
+	<meta property="og:image" content="images/favicon.png" />
+	<meta property="og:url" content="https://dappadventure.xyz" />
+	<meta property="og:site_name" content="dAppAdventure" />
+	<meta property="og:description" content="Открытый урок: Сценарии использования протокола Сompound" />
+	<meta name="twitter:title" content="Открытый урок: Сценарии использования протокола Сompound" />
+	<meta name="facebook-domain-verification" content="y7jmtxj91zphryeaoxdxrwwmn3sqct" />
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TFTT9ND');</script>
+	<!-- End Google Tag Manager -->
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFTT9ND"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+		<nav class="fh5co-nav navbar-fixed-top" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-2">
+							<div id="fh5co-logo"><a href="index.html">dAppAdventure<span>.</span></a></div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li><a href="https://dappadventure.xyz">О курсе</a></li>
+								<li><a href="#whom">О чем онлайн-урок?</a></li>
+								<li><a href="#orgs">Спикеры</a></li>
+								<li class="btn-cta"><a href="https://t.me/dappadv" target="_blank"><span>Напиши нам</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+
+		<header id="header" class="fh5co-cover" role="banner">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t js-fullheight">
+							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+								<h1><span class="webinar">Открытый урок</span></h1>
+                                <h1>Сценарии использования протокола <a href="https://compound.finance">Compound Finance</a></h1>
+								<h2>1 июня в 19:00 GMT+3 | Онлайн</h2>
+								<p>Участвуй в бесплатном открытом уроке курса онлайн-симулятора разработки Web3-приложений.
+									Ты узнаешь все о работе реального Web3 приложения <a href="https://compound.finance">Compound Finance</a>.
+                                    Compound - это один из самых популярных протоколов займа. На уроке мы разберем его до винтиков и изучим вместе как он работает.
+								<p><a class="btn btn-primary btn-lg btn-demo course" href="https://t.me/dAppAdventureBot" target="_blank"></i>Записаться на открытый урок</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="whom">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>О чем будем говорить</h2>
+					</div>
+				</div>
+				<div class="">
+					<div class="row">
+						<div class="col-md-4 animate-box">
+							<div class="feature-left">
+								<span class="icon">
+									<i class="icon-tree"></i>
+								</span>
+								<div class="feature-copy">
+									<h3>Интеграция с контрактами Compound Finance</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 animate-box">
+							<div class="feature-left">
+								<span class="icon">
+									<i class="icon-shuffle"></i>
+								</span>
+								<div class="feature-copy">
+									<h3>Взаимодействие Compound Finance Web со своими контрактами</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 animate-box">
+							<div class="feature-left">
+								<span class="icon">
+									<i class="icon-bubbles3"></i>
+								</span>
+								<div class="feature-copy">
+									<h3>Ответим на вопросы о принципах работы Web3 приложений</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="orgs">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Спикеры</h2>
+						<p>Рады делиться знаниями</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-2">
+						<div class="orgs animate-box">
+							<a href="#" class="blog-bg" style="background-image: url(images/abelousov.jpg);"></a>
+							<div class="blog-text">
+								<h3><a href="#">Александр Белоусов</a></h3>
+								<p>Разработчик с 9-ю годами опыта. Специалист по интеграцции блокчейна.
+								   Разрабатывал платежные системы с использованием блокчейна
+								   для швейцарских криптостартапов Lykke и Swisschain.
+								   Имею опыт работы с Ethereum, Bitcoin, Stellar, Icon, и др.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="orgs animate-box">
+							<a href="#" class="blog-bg" style="background-image: url(images/akornev.jpg);"></a>
+							<div class="blog-text">
+								<h3><a href="#">Алексей Корнев</a></h3>
+								<p>20+ лет в ИТ,
+									6 последних лет работаю как Архитектор программных решений с зарубежными заказчиками.
+									Создатель обучающего проекта Jedi University.
+									Организатор блокчейн сообщества.
+									</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="feedback">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 animate-box">
+						<div class="heading">
+                          <h2>Отзывы о курсе <a href="index.html">dAppAdventure</a></h2>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-push-1 animate-box">
+						<aside id="fh5co-hero">
+							<div class="flexslider">
+								<ul class="slides">
+									<li style="background-image: url(images/pshkitin.jpg);">
+										<div class="overlay-gradient"></div>
+										<div class="container-fluid">
+											<div class="row">
+												<div
+													class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+													<div class="slider-text-inner">
+														<div class="desc">
+															<h2>Павел Шкитин</h2>
+                                                            <h4>CEO, <a href="https://nomiswap.io">nomiswap.io</a></h4>
+                                                            <p>Как CEO и создатель децентрализованной криптовалютной биржи считаю, что профессионалы Blockchain-отрасли должны делиться своим опытом с начинающими специалистами. Это помогает достичь тех, высоких целей, которые ставит перед нами Крипто-сообщество. Команда dAppAdventure предлагает симулятор работы в команде, который поможет студентам научиться разрабатывать на Solidity и решать реальные проблемы в разработке Web3 приложений. Ребят знаю давно, не упустите возможность учиться у лучших!</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li style="background-image: url(images/smaslov.jpg);">
+										<div class="overlay-gradient"></div>
+										<div class="container-fluid">
+											<div class="row">
+												<div
+													class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+													<div class="slider-text-inner">
+														<div class="desc">
+															<h2>Сергей Маслов</h2>
+                                                            <h4>Независимый разработчик, Blockchain ninja</h4>
+															<p>Уже много лет знаком с Алексеем и Александром, как с опытными специалистами в области сложных Blockchain и IT-решений. Команда dAppAdventure создала мощный и практичный курс, основанный на личном опыте работы в блокчейн-индустрии. Уверен, что студенты получат обширные знания и навыки в разработке децентрализованных приложений, что поможет им начать успешную карьеру в этой быстро развивающейся сфере.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="faq">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Остались вопросы?</h2>
+						<p><a href="https://t.me/dappadv" class="btn btn-default btn-lg" target="_blank">Напиши нам</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="footer" role="contentinfo">
+			<div class="container">
+				<div class="row copyright">
+					<div class="col-md-12 text-center">
+						<p>
+							<small class="block">&copy; 2023 dAppAdventure. All Rights Reserved.</small>
+						</p>
+						<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="https://vk.com/dappadventure" target="_blank"><i class="icon-vk"></i></a></li>
+							<li><a href="https://www.instagram.com/dappadv" target="_blank"><i class="icon-instagram"></i></a></li>
+							<li><a href="https://t.me/dAppAdventureBot" target="_blank" class="course"><i class="icon-telegram"></i></a></li>
+						</ul>
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
