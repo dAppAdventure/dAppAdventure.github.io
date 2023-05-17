@@ -18,7 +18,7 @@ DTSTAMP:20230427T121852Z
 DTSTART;TZID=Europe/Moscow:20230601T190000
 DTEND;TZID=Europe/Moscow:20230601T200000
 SUMMARY:Сценарии использования протокола Compound Finance
-DESCRIPTION:Ссылка на ZOOM звонок: https://us06web.zoom.us/j/84875307925?pwd=ZHZ6d3IyaGJyMGkxeWRJSlBjb2ZQdz09
+DESCRIPTION:Ссылка на ZOOM звонок: https://us06web.zoom.us/j/82279105360?pwd=YmJHS1pwWi81bk12alYrZS9JaGVzQT09
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Сценарии использования протокола Compound Finance
