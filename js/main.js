@@ -28,9 +28,9 @@
 	if (popup != null) {
 		var closeBtn = document.getElementsByClassName("closepopup")[0];
 		var regBtn = document.getElementsByClassName("registration")[0];
-//		setTimeout(function () {
-// 			popup.style.display = "block";
-// 		}, 15000);
+		setTimeout(function () {
+ 			popup.style.display = "block";
+ 		}, 15000);
 
         if (regBtn) {
           regBtn.onclick = function () {
